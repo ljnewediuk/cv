@@ -1,0 +1,84 @@
+---
+name: Levi
+surname: Newediuk
+position: "Assistant Professor"
+address: "Department of Biology, Mount Royal University"
+phone: 403 440 8484
+www: ljnewediukecology.com
+email: "lnewediuk@mtroyal.ca"
+github: ljnewediuk
+date: "`r format(Sys.time(), '%B %Y')`"
+output:
+  vitae::awesomecv:
+    page_total: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+# Academic positions
+
+```{r}
+library(tibble)
+tribble(
+  ~ Position, ~ Years, ~ Institution,
+  "Assistant Professor", "2025-Present", "Mount Royal University",
+  "Postdoctoral Fellow", "2022-2025", "University of Manitoba",
+) %>%
+  detailed_entries(Position, Years, Institution)
+```
+
+# Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Advisor,
+  "PhD, Biology", "2022", "Memorial University of Newfoundland", "Dr. Eric Vander Wal",
+  "MSc, Biology", "2017", "University of Manitoba", "Dr. James Hare",
+  "BSc Hons, Biology", "2011", "University of Manitoba", "Dr. James Hare"
+) %>%
+  detailed_entries(Degree, Year, Institution, Advisor)
+```
+
+# Publications
+
+## In review/revision
+
+```{r}
+library(dplyr)
+
+bib <- tempfile(fileext = ".bib")
+
+bibliography_entries("pubs_in_revision.bib") %>%
+  arrange(desc(author$family), desc(issued))
+```
+
+## Published
+
+```{r}
+library(dplyr)
+
+bib <- tempfile(fileext = ".bib")
+
+bibliography_entries("pubs_published.bib") %>%
+  arrange(desc(issued), desc(author$family))
+```
+
+# Nobel Prizes
+
+```{r}
+tribble(
+  ~Year, ~Type, ~Desc,
+  1903, "Physics", "Awarded for her work on radioactivity with Pierre Curie and Henri Becquerel",
+  1911, "Chemistry", "Awarded for the discovery of radium and polonium"
+) %>%
+  brief_entries(
+    glue::glue("Nobel Prize in {Type}"),
+    Year,
+    Desc
+  )
+```
+
