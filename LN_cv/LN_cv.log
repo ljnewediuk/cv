@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  28 AUG 2026 17:11
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.28)  29 AUG 2026 17:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -914,18 +914,24 @@ LaTeX Font Info:    Font shape `TU/SourceSans3(3)/m/sl' in size <8> not availabl
 LaTeX Font Info:    Font shape `TU/SourceSans3(3)/m/it' will be
 (Font)              scaled to size 8.0pt on input line 146.
 LaTeX Font Info:    Font shape `TU/SourceSans3(1)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 160.
+(Font)              scaled to size 12.0pt on input line 161.
 LaTeX Font Info:    Font shape `TU/SourceSans3(1)/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 160.
-LaTeX Font Info:    Font shape `TU/SourceSans3(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 169.
-LaTeX Font Info:    Font shape `TU/SourceSans3(1)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 224.
-LaTeX Font Info:    Font shape `TU/SourceSans3(1)/b/n' will be
-(Font)              scaled to size 9.0pt on input line 224.
+(Font)              scaled to size 12.0pt on input line 161.
+LaTeX Font Info:    Font shape `TU/SourceSans3(1)/b/sc' will be
+(Font)              scaled to size 8.0pt on input line 201.
 [1
 
-] [2] (./LN_cv.aux)
+]
+LaTeX Font Info:    Font shape `TU/SourceSans3(0)/b/n' will be
+(Font)              scaled to size 10.95pt on input line 214.
+LaTeX Font Info:    Font shape `TU/SourceSans3(0)/m/it' will be
+(Font)              scaled to size 10.95pt on input line 214.
+[2]
+LaTeX Font Info:    Font shape `TU/SourceSans3(1)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 411.
+LaTeX Font Info:    Font shape `TU/SourceSans3(1)/b/n' will be
+(Font)              scaled to size 9.0pt on input line 411.
+[3] (./LN_cv.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-08-10>
@@ -934,12 +940,12 @@ Package rerunfilecheck Info: File `LN_cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 33374 strings out of 469768
- 684896 string characters out of 5467582
- 1258362 words of memory out of 5000000
- 61830 multiletter control sequences out of 15000+600000
- 632133 words of font info for 137 fonts, out of 8000000 for 9000
+ 33408 strings out of 469768
+ 685685 string characters out of 5467582
+ 1262229 words of memory out of 5000000
+ 61862 multiletter control sequences out of 15000+600000
+ 632149 words of font info for 139 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  131i,11n,136p,543b,652s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on LN_cv.pdf (2 pages).
+Output written on LN_cv.pdf (3 pages).

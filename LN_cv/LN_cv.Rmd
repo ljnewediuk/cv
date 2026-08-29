@@ -11,6 +11,7 @@ date: "`r format(Sys.time(), '%B %Y')`"
 output:
   vitae::awesomecv:
     page_total: true
+    pandoc_args: ["--lua-filter=bold-surname.lua"]
 ---
 
 ```{r setup, include=FALSE}
@@ -43,7 +44,13 @@ tribble(
   detailed_entries(Degree, Year, Institution, Advisor)
 ```
 
-# Publications
+# Academic profile
+
+```{r child="academic_profile.Rmd"}
+
+```
+
+# Peer-reviewed publications
 
 ## In review/revision
 
@@ -67,7 +74,37 @@ bibliography_entries("pubs_published.bib") %>%
   arrange(desc(issued), desc(author$family))
 ```
 
-# Nobel Prizes
+# Conferences
+
+## Invited talks
+
+
+## Presentations
+
+```{r}
+library(dplyr)
+
+bib <- tempfile(fileext = ".bib")
+
+bibliography_entries("conference_talks.bib") %>%
+  arrange(desc(issued), desc(author$family))
+```
+
+## Symposium organization
+
+# Other research outputs
+
+## Media coverage
+
+# Professional & academic service
+
+## Committee roles (Leadership)
+
+## Committee roles (Participation)
+
+## Other service
+
+# Grants & research funding
 
 ```{r}
 tribble(

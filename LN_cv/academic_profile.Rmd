@@ -1,0 +1,35 @@
+
+## Research interests & mentorship
+
+I study how humans shape animal movement. My long-term goal is to learn what drives the movement of individual animals in response to human activity and disturbance, which is becoming an omnipresent feature of our modern landscapes, including those withi and around Calgary. Rather than simply documenting how human disturbance impacts animal movement and distributions, my research aims to determine how individuals integrate information about environmental pressures, resource opportunities, and their physiological states when deciding where to move. I use mostly non-invasive approaches and tools to address my research questions, including behavioural observations to study small-scale movement, camera traps to track movement over larger scales, and extracting physiological data from fecal and hair samples to connect movement to physiological state.
+
+I have mentored the following students:
+
+```{r}
+library(tibble)
+tribble(
+  ~ Position, ~ Student, ~ Semester_Year,
+  "Research Assistant", "Sophia Vig-Benko", "Summer 2026",
+  "Research Assistant", "Luis Fuenmayor", "Summer 2026",
+  "BIOL 5201 (Project: Temporal changes in raccoon activity)", "Jazmin Singh-Kaur", "Winter 2026"
+) %>%
+  detailed_entries(Position, Semester_Year, Student)
+```
+
+## Teaching experience & interests
+
+I currently teach in the area of ecology and evolution. I am passionate about teaching essential quantitative skills to students, demonstrating through hands-on exercises that math and coding can also be fun. In addition to teaching, I am also developing upper-year courses in population and community ecology. I have taught the following courses:
+
+```{r}
+library(tibble)
+tribble(
+  ~ Institution, ~ Course, ~ Year,
+  "Mount Royal University", "BIOL 4320: Field Biology Research Techniques", "2026",
+  "Mount Royal University", "BIOL 3401: Big Questions & Big Data", "2026",
+  "Mount Royal University", "BIOL 2213: Principles of Ecology & Evolution", "2025-26",
+  "Mount Royal University", "BIOL 4330: Population & Community Ecology", "2025",
+  "University of Manitoba", "BIOL 3350: Data Analysis in Ecology", "2023-2024",
+  "University of Manitoba", "BIOL 1010: Biological Diversity & Interaction", "2023"
+) %>%
+  detailed_entries(Institution, Year, Course)
+```
