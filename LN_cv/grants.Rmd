@@ -1,0 +1,13 @@
+
+## External funding
+
+```{r}
+library(tibble)
+tribble(
+  ~ Grant, ~ Amount, ~ Year,
+  "Alberta Conservation Association Research Grants", "$23,900 (Mount Royal University)", "2026 (one year)",
+ "Manitoba Habitat Heritage Corporation Fish & Wildlife Enhancement Fund", "$81,400 (Memorial University of Newfoundland)", "2018 (over two years)",
+  "Nature Conservancy of Canada Science Support Program", "$15,000 (Memorial University of Newfoundland)", "2018 (over two years)" 
+) %>%
+  detailed_entries(Grant, Year, Amount)
+```

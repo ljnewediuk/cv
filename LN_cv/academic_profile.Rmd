@@ -1,7 +1,7 @@
 
 ## Research interests & mentorship
 
-I study how humans shape animal movement. My long-term goal is to learn what drives the movement of individual animals in response to human activity and disturbance, which is becoming an omnipresent feature of our modern landscapes, including those withi and around Calgary. Rather than simply documenting how human disturbance impacts animal movement and distributions, my research aims to determine how individuals integrate information about environmental pressures, resource opportunities, and their physiological states when deciding where to move. I use mostly non-invasive approaches and tools to address my research questions, including behavioural observations to study small-scale movement, camera traps to track movement over larger scales, and extracting physiological data from fecal and hair samples to connect movement to physiological state.
+I study how humans shape animal movement. My long-term goal is to learn what drives the movement of individual animals in response to human activity and disturbance, which is becoming a permanent and pervasive feature of our modern landscapes, including those withi and around Calgary. Rather than simply documenting how human disturbance impacts animal movement and distributions, my research aims to determine how individuals integrate information about environmental pressures, resource opportunities, and their physiological states when deciding where to move. I use mostly non-invasive approaches and tools, including behavioural observations to study small-scale movement, camera traps to track movement over larger scales, physiological data exracted from fecal and hair samples to connect movement to physiological state.
 
 I have mentored the following students:
 
@@ -18,7 +18,7 @@ tribble(
 
 ## Teaching experience & interests
 
-I currently teach in the area of ecology and evolution. I am passionate about teaching essential quantitative skills to students, demonstrating through hands-on exercises that math and coding can also be fun. In addition to teaching, I am also developing upper-year courses in population and community ecology. I have taught the following courses:
+I currently teach in the area of ecology and evolution. I am passionate about teaching essential quantitative skills to students, demonstrating through hands-on exercises that math and coding can also be fun. I have also developed courses in population and community ecology. While emphasizing theory, I also encourage my students to observe nature, which I believe is essential for generating good research questions. I have taught the following courses:
 
 ```{r}
 library(tibble)

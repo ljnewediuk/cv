@@ -26,7 +26,8 @@ library(tibble)
 tribble(
   ~ Position, ~ Years, ~ Institution,
   "Assistant Professor", "2025-Present", "Mount Royal University",
-  "Postdoctoral Fellow", "2022-2025", "University of Manitoba",
+  "NSERC Postdoctoral Fellow", "2025", "University of Manitoba",
+  "Postdoctoral Fellow", "2022-2024", "University of Manitoba",
 ) %>%
   detailed_entries(Position, Years, Institution)
 ```
@@ -78,6 +79,14 @@ bibliography_entries("pubs_published.bib") %>%
 
 ## Invited talks
 
+```{r}
+library(dplyr)
+
+bib <- tempfile(fileext = ".bib")
+
+bibliography_entries("invited_talks.bib") %>%
+  arrange(desc(issued), desc(author$family))
+```
 
 ## Presentations
 
@@ -92,30 +101,36 @@ bibliography_entries("conference_talks.bib") %>%
 
 ## Symposium organization
 
+```{r}
+library(dplyr)
+
+bib <- tempfile(fileext = ".bib")
+
+bibliography_entries("symposia.bib") %>%
+  arrange(desc(issued), desc(author$family))
+```
+
 # Other research outputs
 
 ## Media coverage
 
+```{r}
+library(dplyr)
+
+bib <- tempfile(fileext = ".bib")
+
+bibliography_entries("media_coverage.bib")
+```
+
 # Professional & academic service
 
-## Committee roles (Leadership)
+```{r child="service.Rmd"}
 
-## Committee roles (Participation)
-
-## Other service
+```
 
 # Grants & research funding
 
-```{r}
-tribble(
-  ~Year, ~Type, ~Desc,
-  1903, "Physics", "Awarded for her work on radioactivity with Pierre Curie and Henri Becquerel",
-  1911, "Chemistry", "Awarded for the discovery of radium and polonium"
-) %>%
-  brief_entries(
-    glue::glue("Nobel Prize in {Type}"),
-    Year,
-    Desc
-  )
+```{r child="grants.Rmd"}
+
 ```
 

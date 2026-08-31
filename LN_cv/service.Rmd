@@ -1,0 +1,31 @@
+## Committee roles (Leadership)
+
+```{r}
+library(tibble)
+tribble(
+  ~ Position, ~ Location, ~ Year,
+  "Biology Student Research Coordinator", "Mount Royal University", "2026-2029",
+  "Chair", "Canadian Society for Ecology & Evolution Long-term Research Section", "2026-2028",
+  "President Elect/President", "The Wildlife Society Newfoundland Chapter", "2018-2020"
+) %>%
+  detailed_entries(Position, Year, Location)
+```
+
+## Committee roles (Participation)
+
+```{r}
+library(tibble)
+tribble(
+  ~ Committee, ~ Location, ~ Year,
+  "Animal Care Committee", "Mount Royal University", "2025-2029",
+  "FST Committee on Inclusion, Diversity, Equity, and Accessibility", "Mount Royal University", "2025-Present",
+  "Biology Standing Committee for Sessional Appointments", "Mount Royal University", "2025-Present"
+) %>%
+  detailed_entries(Committee, Year, Location)
+```
+
+## Other service
+
+* Second reader for two MRU Biology research students in 2025-2026 academic year
+* Adjudicated posters for MRU Research Days 2026
+* Reviewed 5 manuscripts for peer-reviewed journals in 2026 (24 since 2020)
